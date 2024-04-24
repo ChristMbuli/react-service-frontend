@@ -25,7 +25,7 @@ const Footer = () => {
           </li>
           <li className="nav-item">
             <a
-              href="http://localhost:3000/"
+              href="https://react-service-frontend.onrender.com/"
               className="nav-link px-2 text-body-secondary"
             >
               Nouveau
