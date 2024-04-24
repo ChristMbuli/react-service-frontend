@@ -17,7 +17,7 @@ const App = () => {
   // Fonction pour récupérer les produits
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:4040/products/");
+      const response = await axios.get("https://nodejs-service-backend.onrender.com/products/");
       // Accéder au tableau 'products' à l'intérieur de l'objet 'response.data'
       const productsArray = response.data.products;
       // Vérifier si 'productsArray' est un tableau, sinon réinitialiser 'products' à un tableau vide
@@ -51,7 +51,7 @@ const App = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4040/products/new",
+        "https://nodejs-service-backend.onrender.com/products/new",
         formData,
         {
           headers: {
